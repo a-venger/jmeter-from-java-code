@@ -11,7 +11,9 @@ This version covers:
 * Running existing jmx scenario
 
 JMX example structure:
+
 TestPlan
+
 	- Cookie Manager
 	- CSV Data Set
 	- Random Variable Config Element
@@ -37,7 +39,10 @@ TestPlan
 * Inspect **JMeterFromScratch.java** source file at [Source](https://github.com/a-venger/jmeter-from-java-code/src/) page for details on how it is implemented.
 
 OpenJMX
-java -Djmeter.home=YOUR_JMETER_LOCATION -DtestPlan.location=YOUR_JMX_LOCATION -jar openJMX-jar-with-dependencies.jar
+
+**java -Djmeter.home=YOUR_JMETER_LOCATION -DtestPlan.location=YOUR_JMX_LOCATION -jar openJMX-jar-with-dependencies.jar**
+
 Example
-java -Djmeter.home=YOUR_JMETER_LOCATION -jar example-jar-with-dependencies.jar
+
+**java -Djmeter.home=YOUR_JMETER_LOCATION -jar example-jar-with-dependencies.jar**
 
