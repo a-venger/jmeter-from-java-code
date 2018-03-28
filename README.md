@@ -55,5 +55,6 @@ To run example of JMeter script via Java API and providing your JMeter location
 
 **java -Djmeter.home=YOUR_JMETER_LOCATION -jar example-jar-with-dependencies.jar**
 
+## Implementation
 
-
+Inspect *JMeterFromCode.java* and *OpenJMX.java* source files at [Source](https://github.com/a-venger/jmeter-from-java-code/tree/master/src/main/java/com/avenger/demo) page for details on how it is implemented.
