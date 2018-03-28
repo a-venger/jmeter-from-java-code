@@ -4,3 +4,8 @@ target/
 # idea
 .idea/
 *.iml
+
+# JMeter Results
+apache-jmeter-4.0/HTMLReport/
+apache-jmeter-4.0/example.jmx
+apache-jmeter-4.0/example.jtl
