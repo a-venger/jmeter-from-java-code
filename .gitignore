@@ -1,2 +1,6 @@
+# maven
+target/
+
+# idea
+.idea/
 *.iml
-/.idea

@@ -1,0 +1,5 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1522219280963,735,TRANSACTION CONTROLLER,200,"Number of samples in transaction : 2, number of failing samples : 0",Example Thread Group 1-1,,true,,2116,223,1,1,0,0,0
+1522219281701,249,blazemeter.com,302,Found,Example Thread Group 1-1,text,true,,504,113,1,1,249,0,122
+1522219286533,251,Open example.com,200,OK,Example Thread Group 1-1,text,true,,1596,110,1,1,250,0,123
+1522219286912,248,blazemeter.com,302,Found,Example Thread Group 1-1,text,true,,504,113,1,1,248,0,122

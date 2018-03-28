@@ -23,13 +23,14 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>com.avenger.demo.JMeterFromScratch</mainClass>
+                                    <mainClass>com.avenger.demo.JMeterFromCode</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
                             <finalName>example</finalName>
+                            <outputDirectory>./jar</outputDirectory>
                         </configuration>
                     </execution>
                     <execution>
@@ -48,6 +49,7 @@
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
                             <finalName>openJMX</finalName>
+                            <outputDirectory>./jar</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>

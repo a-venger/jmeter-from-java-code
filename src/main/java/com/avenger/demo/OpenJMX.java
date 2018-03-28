@@ -17,11 +17,11 @@ public class OpenJMX {
     public static void main(String[] argv) throws Exception {
 
         // Jmeter location
-        File jmeterHome = new File(System.getProperty("jmeter.home"));
+        File jmeterHome = new File(System.getProperty("jmeter.home", "apache-jmeter-4.0"));
         String slash = System.getProperty("file.separator");
 
         // Ready to start JMX scenario location
-        File testPlan = new File(System.getProperty("testPlan.location"));
+        File testPlan = new File(System.getProperty("testPlan.location", "apache-jmeter-4.0\\example.jmx"));
 
         if (jmeterHome.exists()) {
             if (testPlan.exists()) {
@@ -54,11 +54,15 @@ public class OpenJMX {
                     }
 
                     // Store execution results into a .jtl file
-                    String logFile = jmeterHome + slash + "example.jtl";
-                    FileUtils.forceDelete(new File(logFile)); //delete log file
+                    File logFile = new File(jmeterHome + slash + "example.jtl");
+                    //delete log file if exists
+                    if (logFile.exists()){
+                        boolean delete = logFile.delete();
+                        System.out.println("Jtl deleted: "+delete);
+                    }
                     ResultCollector logger = new ResultCollector(summer);
-                    ReportGenerator reportGenerator = new ReportGenerator(logFile, logger); //creating ReportGenerator for creating HTML report
-                    logger.setFilename(logFile);
+                    ReportGenerator reportGenerator = new ReportGenerator(logFile.getPath(), logger); //creating ReportGenerator for creating HTML report
+                    logger.setFilename(logFile.getPath());
                     testPlanTree.add(testPlanTree.getArray()[0], logger);
 
                     // Run JMeter Test
