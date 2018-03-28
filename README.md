@@ -24,7 +24,9 @@ The following requirements exist for running Apache JMeter:
 	
 	
 JMX example structure:
+
 ![Scenario Structure](https://github.com/a-venger/jmeter-from-java-code/blob/master/apache-jmeter-4.0/resources/ScenarioStructure.png)
+
 	- Cookie Manager
 	- CSV Data Set
 	- Random Variable Config Element
